@@ -1,8 +1,6 @@
-# Notes
+#Vim
 
-## Vim
-
-Vim has 3 modes, regular, insert, and console.  
+Vim has 3 modes: regular, insert, and console.  
 
 #### Regular Mode
 
