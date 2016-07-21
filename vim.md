@@ -7,7 +7,7 @@ Vim has 3 modes: regular, insert, and console.
 i  - enter insert mode  
 o  - create line below current line  
 dd - delete current line  
-dw - deleter current word  
+dw - delete current word  
 u  - undo  
 yy - yank (copy) line  
 p  - paste  
@@ -27,7 +27,7 @@ $  - end of line
 n  - go to next search result  
 gg - go to top of file  
 G  - go to the bottom of the file  
-
+t + character - go to character
 
 #### Console Mode
 
