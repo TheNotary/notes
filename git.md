@@ -1,15 +1,15 @@
 # Git
 
 ### Commiting
-* `git add .` - 
-* `git commit -m` - 
-* `git commit --amend` - amends the last commit with everything in the staging are  
+* `git add -A` - adds all files to staging area  
+* `git commit -m` - commits changes followed by a memo  
+* `git commit --amend` - amends the last commit with everything in the staging area  
 * `git reset HEAD^` - undoes the second to last commit   
  
 ### Navigating
-* `git checkout <COMMIT/ BRANCH>` - 
-* `git checkout -b` -
-* `git branch` -
+* `git checkout <COMMIT/ BRANCH>` -  
+* `git checkout -b` - creates a new branch and changes into it  
+* `git branch` - creates a new branch  
 
 ### Colaborating
 * `hub create` - logs into Github and creates a remote repository  
