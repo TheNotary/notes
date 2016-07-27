@@ -7,9 +7,15 @@
 * `ctrl + u` - clears line up to cursor position  
 * `ctrl + l` - clears terminal  
 
-##Special files
+## Special files
 
 ~/.bash_profile - executed every time new terminal runs
+
+## Special Symbols
+
+* `~` - home folder (/home/USER_NAME)
+* `.` - Shortcut for current direcotry
+* `..` - Shortcut for up one directory
 
 ##Important bash commands
 
