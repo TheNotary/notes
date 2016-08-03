@@ -1,6 +1,6 @@
 # Unix Commands
 
-##Terminal shortcuts
+## Terminal shortcuts
 
 * `ctrl + a` - goes to beginning of line  
 * `ctrl + e` - goes to end of line  
@@ -17,7 +17,7 @@
 * `.` - Shortcut for current direcotry
 * `..` - Shortcut for up one directory
 
-##Important bash commands
+## Important bash commands
 
 * `alias` - sets shortcuts  
 * `brew` - a system package manager for Mac  
