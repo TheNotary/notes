@@ -26,3 +26,10 @@
 * `echo` - prints to standard output the specified string or variable  
 * `cat` - prints to standard output the contents of a file  
 * `pbcopy` - copies the contents of the specified file into clipboard  
+
+## Tmux Commands
+
+Tmux allows for pairing and the creation of 'workspaces', see the [cheatsheet](https://gist.github.com/MohamedAlaa/2961058).
+
+
+
