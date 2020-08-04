@@ -12,7 +12,7 @@ Gradle is used to bundle dependencies and stuff.
 
 - Hello World
 - A CLI app
-  - Packages:  http://docs.groovy-lang.org/latest/html/documentation/#_program_structure
+  - [Packages](http://docs.groovy-lang.org/latest/html/documentation/#_program_structure)
 - An app that supports using 3rd party dependencies
   - http://docs.groovy-lang.org/latest/html/documentation/grape.html
 - An app that includes tests
@@ -52,8 +52,32 @@ Also, you can run a single test!!!:
 ## Debugging/ Investigating generally...
 
 You can get useful information about an object with these methods...
+
 ```
 def obj = new SomeObject()
 println "Object's methods:  ${obj.metaClass.methods*.name.sort().unique() }"
 println "Object's properties:  ${obj.getProperties().toString() }"
 ```
+
+
+
+###### Inspecting Objects in groovysh
+
+https://github.com/tkruse/gradle-groovysh-plugin/blob/master/doc/InstallAppShellManually.md
+
+https://docs.gradle.org/current/userguide/gradle_daemon.html
+
+```
+$  groovysh
+
+import groovy.grape.Grape
+Grape.addResolver(name:'jenkins', root:'http://repo.jenkins-ci.org/public/')
+Grape.grab(group:'org.jenkins-ci.plugins.workflow', module:'workflow-step-api', version:'2.16')
+
+import groovy.grape.Grape
+@GrabResolver(name='jenkins', root='http://repo.jenkins-ci.org/public/')
+@Grab(group='org.jenkins-ci.main', module='jenkins-core', version='2.9')
+import jenkins.model.Jenkins
+```
+
+
