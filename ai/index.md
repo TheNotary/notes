@@ -1,6 +1,27 @@
 #
 
 
+
+## On calculating Perplexity
+
+Ref: https://huggingface.co/docs/transformers/perplexity
+
+### Mystery Verbs
+- autoregressively factorizing a sequence and conditioning on Blah
+- exponentiating the cross-entropy between the data and model predictions.
+
+### Mystery Nouns
+- cross-entropy (between data and model predictions)
+- Bits Per Character (BPC)
+- log-likelihood
+- Perplexity (PPL),
+- classical/ autoregressive/ causal language models (transformer-based models are of this kind)
+- approximate models (tend to have constraints on context window?)
+- sliding-window strategy: filo stack
+- strided sliding-window strategy: Incrimenting the context window in steps greater than 1 unit at a time.
+- forward pass
+
+
 ## Data Science Terms
 
 - differentiation engine
