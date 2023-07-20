@@ -105,6 +105,16 @@ Ref: https://huggingface.co/docs/transformers/perplexity
   - https://docs.wandb.ai/guides/integrations/composer#:~:text=Composer%20is%20a%20library%20for,composing%20many%20different%20enhancements%20easy.
 - Hugging Face accelerate
 
+
+## Model Formats and Quantization Algorithms
+
+There are several model formats.
+
+- GGML/ GPT-for-all / GPT4X / GPTJ
+- [GPTQ](https://arxiv.org/abs/2210.17323) - A one-shot weight quantization method, that is both highly-accurate and highly-efficient. This approach doubles the compression gains relative to previously-proposed one-shot quantization methods, preserving accuracy, allowing say 175 billion-parameter models inside a single GPU for generative inference.
+-
+
+
 ###### Sliding Window of Context, vanishing gradient problem
 
 - Input limited to 2048 tokens (sliding window of context).  Everytime the model generates a token, it replaces the earliest token on the input.
