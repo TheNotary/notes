@@ -4,6 +4,16 @@ Python is a dynamicly typed, though fast general purpose programming language. P
 
 The things that makes Python standout from other languages are that relative readability over perl, cross-platform compatibitily, support for procedural, object-oriented, and functional programming.
 
+### Virtual Env
+
+In Python development, it's traditional to create a virtual environment to install pip packages into for each app you're working on instead of installing everything globabally which would lead to dll hell.  The below commands will create a brand new virtual env and subsequently activate it.  
+
+```bash
+python -m venv .env
+source .env/bin/activate
+# For window use this instead :)
+# .\.env\Scripts\activate
+```
 
 ### How to Run a Simple Hello World
 
