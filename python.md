@@ -101,8 +101,50 @@ Here's a simple hello world script with a class along with a separte test file.
 
 (calculator.py)
 ```
+class Calculator:
+    def add(self, a, b):
+        return a + b
 
+    def subtract(self, a, b):
+        return a - b
+
+    def multiply(self, a, b):
+        return a * b
+
+    def divide(self, a, b):
+        if b != 0:
+            return a / b
+        else:
+            raise ValueError("Cannot divide by zero!")
 ```
 
+(test_calculator.py)
+```
+import unittest
+from calculator import Calculator
 
+class TestCalculator(unittest.TestCase):
+    def setUp(self):
+        self.calculator = Calculator()
 
+    def test_add(self):
+        self.assertEqual(self.calculator.add(5, 7), 12)
+
+    def test_subtract(self):
+        self.assertEqual(self.calculator.subtract(10, 5), 5)
+
+    def test_multiply(self):
+        self.assertEqual(self.calculator.multiply(3, 7), 21)
+
+    def test_divide(self):
+        self.assertEqual(self.calculator.divide(10, 2), 5)
+
+    def test_divide_by_zero(self):
+        with self.assertRaises(ValueError):
+            self.calculator.divide(10, 0)
+
+if __name__ == '__main__':
+    unittest.main()
+```
+
+To test, you can run `python test_calculator.py` but I'll need to research more elaborate testing frameworks in the next section.  
