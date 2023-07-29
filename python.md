@@ -63,7 +63,7 @@ buggy_function()
 
 When you run this code, the program will stop at the point where pdb.set_trace() is called. You can then inspect variables, step through the code, etc.
 
-Here are some commonly used `pdb` commands:
+#### PDB Commands
 
 - n(ext): Execute the next line within the current function. If the next line is a function call, it will not step into that function, but instead step over it.
 - s(tep): Similar to `next`, but will step into a function call. This allows you to debug the internals of functions.
@@ -77,6 +77,23 @@ Here are some commonly used `pdb` commands:
 - j(ump) lineno: Set the next line that will be executed. Only available in the bottom-most frame. This lets you skip part of your code.
 - q(uit): Quit the debugger and exit.
 
+#### Tips for inspecting objects
+
+```
+mystery_object = "pretend you don't know what this object is"
+
+# Get type
+type(mystery_object)
+
+# Get attributes and methods
+dir(mystery_object)
+
+# Print the documentation on the object
+help(mystery_object)
+
+# Get the length
+len(outputs)
+```
 
 ### Classes and Testing
 
