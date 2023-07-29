@@ -34,6 +34,36 @@ Ref: https://huggingface.co/docs/transformers/perplexity
 - Differentiation
 - RMT - Recurrent Memory Transformer
 
+
+## ML Libraries
+
+- PyTorch
+- scikit-learn
+- TensorFlow
+- auto_gptq - For local inferance on CPU/ GPU
+- llama_cpp - for local inferance on CPU
+-
+
+## Model Formats and Quantization Algorithms
+
+There are several model formats.
+
+- GGML/ GPT-for-all / GPT4X / GPTJ
+- [GPTQ](https://arxiv.org/abs/2210.17323) - A one-shot weight quantization method, that is both highly-accurate and highly-efficient. This approach doubles the compression gains relative to previously-proposed one-shot quantization methods, preserving accuracy, allowing say 175 billion-parameter models inside a single GPU for generative inference.
+- fp16 (pytorch format fp16) - This abreviation, fp16 stands for floating point 16 refering to the quantized down form of the model weights (quantized down from it's initial 64ish??? bit size).  These uploads include tokenizers and have files with .pytorch in the name.  I have to imagine these are not very well finetuned for local development the way the other formats are (quantized not to 16 bits, but down to sometimes just 3 bits).
+
+
+## ML Tools
+
+- Apache TVM deep learning compiler.
+- MLFlow: track generations on different model checkpoints
+- DeepSpeed (Azure)
+- MosaicML Composer -
+  - https://docs.wandb.ai/guides/integrations/composer#:~:text=Composer%20is%20a%20library%20for,composing%20many%20different%20enhancements%20easy.
+- Hugging Face accelerate
+
+
+
 ## Tasks for NNs
 
 - Image classification: e.g. assigning a class label to an image based on its content.  (CNN)
@@ -88,31 +118,6 @@ Ref: https://huggingface.co/docs/transformers/perplexity
 - Large Lanug
 
 
-
-## ML Libraries
-
-- PyTorch
-- scikit-learn
-- TensorFlow
-
-
-## ML Tools
-
-- Apache TVM deep learning compiler.
-- MLFlow: track generations on different model checkpoints
-- DeepSpeed (Azure)
-- MosaicML Composer -
-  - https://docs.wandb.ai/guides/integrations/composer#:~:text=Composer%20is%20a%20library%20for,composing%20many%20different%20enhancements%20easy.
-- Hugging Face accelerate
-
-
-## Model Formats and Quantization Algorithms
-
-There are several model formats.
-
-- GGML/ GPT-for-all / GPT4X / GPTJ
-- [GPTQ](https://arxiv.org/abs/2210.17323) - A one-shot weight quantization method, that is both highly-accurate and highly-efficient. This approach doubles the compression gains relative to previously-proposed one-shot quantization methods, preserving accuracy, allowing say 175 billion-parameter models inside a single GPU for generative inference.
--
 
 
 ###### Sliding Window of Context, vanishing gradient problem
