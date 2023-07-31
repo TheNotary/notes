@@ -62,7 +62,11 @@ There are several model formats.
   - https://docs.wandb.ai/guides/integrations/composer#:~:text=Composer%20is%20a%20library%20for,composing%20many%20different%20enhancements%20easy.
 - Hugging Face accelerate
 
+## LLM Prompting Techniques
 
+- CoT - Generating a **Chain of Thoughts** describing the reasoning for the answer prior to generating the answer via priming the NN with precursory reasoning https://arxiv.org/abs/2201.11903
+- ToT - Generating a series of thoughts (perhaps with CoT) using alternative approaches and pick the best from the **Tree of Thoughts** to improve the quality of the final answer.  
+- SoT - The **Skeleton of Thoughts** technique involves generating the skeleton of an answer beforehand (e.g. getting brief bullet lists) and then expanding upon the bullet points in parralle to both improve response times and also in some cases improve overall response quality via concentration on details.  
 
 ## Tasks for NNs
 
