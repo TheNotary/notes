@@ -21,6 +21,10 @@ Ref: https://huggingface.co/docs/transformers/perplexity
 - strided sliding-window strategy: Incrimenting the context window in steps greater than 1 unit at a time.
 - forward pass
 
+## AI/ ML Model Terms
+- Model merging:  Taking two fine-tunings of a base model and blending their layers together.  The results can bring out the strengths in both models.  [See](https://github.com/Gryphe/BlockMerge_Gradient)
+- MoE: Mixture of experts involves putting multiple expert models behind a gating model.  When a token is predicted, the gating model first determines which expert is appropriate for the token, and then passing control to the expert that is ideal for making the prediction.
+- 
 
 ## Data Science Terms
 
