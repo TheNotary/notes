@@ -45,6 +45,9 @@ MyClass.Hello();
 Using heap allocation:
 
 ```
+char* my_array = new char[3] {1, 2, 3};
+delete(my_array);
+
 MyClass* my_class = new MyClass();
 
 // Access members of pointers to classes with the pointer notation
