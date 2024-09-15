@@ -39,14 +39,14 @@ Ref: https://huggingface.co/docs/transformers/perplexity
 - RMT - Recurrent Memory Transformer
 
 
-## ML Libraries
+## ML Libraries and Tools
 
 - PyTorch
 - scikit-learn
 - TensorFlow
 - auto_gptq - For local inferance on CPU/ GPU
 - llama_cpp - for local inferance on CPU
--
+- ollama - CLI tool to download models
 
 ## Model Formats and Quantization Algorithms
 
